@@ -1,5 +1,5 @@
 # CAETE-Tutorials
-Tutorials for running CAETÊ model.
+Tutorials for running the CAETÊ model.
 
 This is a collection of tutorials to run the [CAETÊ-DVM](https://github.com/jpdarela/CAETE-DVM) model. These are inteded to be used alongside  the CAETE-DVM repository.
 
