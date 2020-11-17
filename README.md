@@ -267,7 +267,7 @@ Then, lets configure the new `pylance` language server. Add the following line:
 ```
 
 Now let's configure the Fortran IntelliSense extention, add the following line:
-```json
+```JSON
     "[fortran]": {
         "editor.acceptSuggestionOnEnter": "off"
     },
@@ -281,7 +281,7 @@ Now let's configure the Fortran IntelliSense extention, add the following line:
 
 
 In the end, your `settings.json` should look like this:
-````json
+````JSON
 {
     "python.pythonPath": ".venv/bin/python3.8",
     "python.languageServer": "Pylance",
@@ -305,11 +305,8 @@ Now let's configure the `lunch.json`. This file will be used by the vscode debug
 
 Create the `lunch.json` inside `.vscode` folder if it does not exist create it and add the following:
 
-```json
+```JSON
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -317,7 +314,6 @@ Create the `lunch.json` inside `.vscode` folder if it does not exist create it a
             "type": "python",
             "request": "launch",
             "cwd":"${workspaceFolder}/src",
-            //"program": "${file}",
             "program": "${workspaceFolder}/src/model_driver.py",
             "console": "integratedTerminal"
         }
@@ -386,11 +382,9 @@ CAETÊ uses both Python and Fortran and uses `f2py` module to create an interfac
 
 The Makefile inside `/src` folder have useful automation to make it easier.
 
-`make clean` - it clear your python cache, deletes the `/output` folder and deletes all compiled fortran files, including the `.pyf` file.
+`make clean` - it clears your python cache, deletes the `/output` folder and deletes all compiled fortran files, including the `.pyf` file.
 
 `make so` - compiles all fortran code and creates the `caete_module.pyf`, the interface between Fortran and Python code.
-
-
 
 To run CAETÊ you can do the following:
 ```bash
