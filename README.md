@@ -296,7 +296,7 @@ In the end, your `settings.json` should look like this:
     }
 }
 ````
-You can see this file inseide the `/Example Files` folder.
+You can see this file inside the `/Example Files` folder.
 
 
 This will give you code completition and highlight for both Python and Fortran code.
@@ -320,7 +320,7 @@ Create the `lunch.json` inside `.vscode` folder if it does not exist create it a
     ]
 }
 ```
-You can see this file inseide the `/Example Files` folder.
+You can see this file inside the `/Example Files` folder.
 
 What it does is to inform vscode debug to run `model_driver.py` using python.
 
