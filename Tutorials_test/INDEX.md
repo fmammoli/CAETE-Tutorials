@@ -1,3 +1,5 @@
+This is the propoty for the guide, refer to the README.md
+
 # CAETÊ
 This is the implementation of the Dynamic version of CAETÊ - including Nitrogen and Phosphorus cycling
 
