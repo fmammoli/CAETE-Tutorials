@@ -453,6 +453,22 @@ I am still working on a mixing debuggin solutiion. I haven't managed to make it 
 I think it is probably an f2py limitation.
 I tried to run the model_drive.py using the Python debugger and while it is on pause I attached `lldb` to the python process running the `model_driver.py`. I added a breakpoint to the `budget.f90`it does not pause on it. I am not sure if there is a reasonable solution to that.
 
+I can compile the fortran code with f2py using debug flags like so:
+
+```makefile
+interface: $(sources)
+	echo "Running interface"
+	$(F2PY) $(HFLAG) --debug  $(INTERFACES) $(sources) $(MFLAG) --debug-capi $(MODNAME) $(OVRTFLAG) --quiet
+
+so: $(sources) interface
+	echo "Running so"
+	$(F2PY)  $(INTERFACES) $(CFLAG) --debug --debug-capi  $(sources) --f90flags="${FCFLAGS} -Wall $(EXT_FLAGS) -fopenmp " -lgomp
+	echo
+
+```
+
+The best I got was: I run `model_driver.py` in the debugger with a breakpoint somewhere, when it stops I attach a lldb debugger to the python process. If I manually stop the fortran debugger it stops the code execution but only shows me some assembly code, not the fortran lines...not sure what to do.
+
 If anyone has an idea, please tell me.
 This is the best post I found about it:
 (https://nadiah.org/2020/03/01/example-debug-mixed-python-c-in-visual-studio-code/)[https://nadiah.org/2020/03/01/example-debug-mixed-python-c-in-visual-studio-code/]
