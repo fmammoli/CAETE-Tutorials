@@ -407,7 +407,7 @@ Create a file named `tasks.json` insede your `.vscode` folder:
 }
 ```
 
-This task simply runs the `make debug` inside the Makefile. The `make debug` compiles all fortran files compiles all the fortran code into a library to be used in another fortran program, it compiles using `gfortran` instead of F2PY. Since the fortran modules are compiled into a library, they can be tested using another fortran program, such as the `debug_caete.f90`.
+This task simply runs the `make debug` inside the Makefile. The `make debug` compiles all fortran files into a library to be used in another fortran program, it compiles using `gfortran` instead of F2PY. Since the fortran modules are compiled into a library, they can be tested using another fortran program, such as the `debug_caete.f90`.
 
 Then, you need to configure how the vscode debugger will be lounched.
 For that open you `launch.json` inside you `.vscode` folder and add the following:
@@ -444,7 +444,7 @@ What this configuration does is: it run the `make debug` task we have previously
 
 With that you can set breakpoints in your fortran code, check stacktraces and variables values using the vscode debug interface.
 
-Since `caete_module` is compiled as a library and not a program, you will need to make a program that calls specific subroutines in the `caete_module` file. For an example of how to do it check them check the `debug_caete.f90` file, inside the `/src` folder.
+Since `caete_module` is compiled as a library and not a program, you will need to make a program that calls specific subroutines in the `caete_module` file. For an example of how to do it check the `debug_caete.f90` file, inside the `/src` folder.
 
 # Debugging Mixed Python and Fortran code
 
