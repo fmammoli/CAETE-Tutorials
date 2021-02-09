@@ -280,7 +280,7 @@ For that click in the extension tab inside vscode, search and install the follow
 
 - Python,
 - Pylance,
-- Visual Studio Intellisense,
+- Visual Studio IntellCode,
 - Path IntelliSense,
 - Modern Fortran\*
 - Fortran IntelliSense\*
