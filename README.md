@@ -291,7 +291,7 @@ For that click in the extension tab inside vscode, search and install the follow
 
 Now let's configure everything.
 
-In the root folder of your project you will find the `/.vscode` folder, here is where all configurations will go.
+In the root folder of your project you will find the `/.vscode` folder, if you don't have one just create a new folder and name it `.vscode`. All configuration files will go inside of it.
 
 Let's start with `setting.json` file.
 
@@ -386,7 +386,9 @@ You can ever run the model line by line checking all changes in any variables!
 To debug fortran code in fscode with breakpoint you will need `gdb`, the `Modern Fortran` vscode extension,the `Fortran Breakpoint Support` vscode extension, and `C/C++` vscode extintion.
 You can find all of them in the vscode extention marketplace
 
-Make sure to install them all before continuing.
+If you are following this tutorial from the begining you have already `Modern Fortran installed`, and if you are ussing linux, you already have `gdb`.
+
+Make sure to have them all those extension install them all before continuing.
 
 After that you need to create a vscode task to compile your fortran code, you can use this as an example:
 Create a file named `tasks.json` insede your `.vscode` folder:
