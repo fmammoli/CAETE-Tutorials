@@ -571,7 +571,7 @@ These are some very basic git command in case you have forgotten them.
 To clone a repository to your computer:
 `git clone link_to_the_repository_`
 
-To link all your branches:
+To list all your branches:
 `git branch`
 
 The `*` will show which branch you are currently on.
