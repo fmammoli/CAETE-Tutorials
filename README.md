@@ -293,7 +293,7 @@ Now let's configure everything.
 
 In the root folder of your project you will find the `/.vscode` folder, if you don't have one just create a new folder and name it `.vscode`. All configuration files will go inside of it.
 
-Let's start with `setting.json` file.
+Let's start with `settings.json` file.
 
 First check if if the project is using the correct `python` version,
 
