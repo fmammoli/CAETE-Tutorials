@@ -510,7 +510,7 @@ pip install cftime
 pip install pandas
 
 #To install matplotlib
-pip install matplotpib
+pip install matplotlib
 
 #To install ipython
 pip install ipython
