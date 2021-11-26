@@ -238,7 +238,7 @@ pyenv global system
 ## VScode Configuration
 
 A configuration so you can debug the model code using vscode debug features and use both Python and Fortran Intellisense.
-You can refer to the file `/Example Files/.setting.json` and `/Example Files/.lunch.json`
+You can refer to the file `/Example Files/.settings.json` and `/Example Files/.launch.json`
 
 ### Pre-requisites
 
@@ -353,9 +353,9 @@ You can see this file inside the `/Example Files` folder.
 
 This will give you code completition and highlight for both Python and Fortran code.
 
-Now let's configure the `lunch.json`. This file will be used by the vscode debug session to lunch the `model_driver.py` automatically.
+Now let's configure the `launch.json`. This file will be used by the vscode debug session to launch the `model_driver.py` automatically.
 
-Create the `lunch.json` inside `.vscode` folder if it does not exist create it and add the following:
+Create the `launch.json` inside `.vscode` folder if it does not exist create it and add the following:
 
 ```JSON
 {
